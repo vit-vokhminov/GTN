@@ -1,7 +1,16 @@
 import React from "react";
 import "./styleEarthGlobe.css";
 
-function EarthGlobe() {
+interface Props {
+    setLoadingBall: (a:boolean) => void
+}
+
+function EarthGlobe({setLoadingBall}:Props) {
+
+    React.useEffect(() => {
+        setLoadingBall(true);
+    }, [setLoadingBall]);
+
     return (
         <div className="har">
             <div className="globe-container">
@@ -19,4 +28,4 @@ function EarthGlobe() {
     );
 }
 
-export default EarthGlobe;
+export default React.memo(EarthGlobe);

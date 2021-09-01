@@ -34,6 +34,9 @@ export { default as IconPaymentPaypal } from "./assets/img/icon/payment_paypal.s
 export { default as IconModalProfile } from "./assets/img/icon/modalProfile.svg";
 export { default as IconModalCalendar } from "./assets/img/icon/modalCalendar.svg";
 
+
+export { default as Icongerman } from "./assets/img/flags/german.svg";
+
 // png
 export { default as IMG_visa } from "./assets/img/payment_system_1.png";
 export { default as IMG_masterCard } from "./assets/img/payment_system_2.png";

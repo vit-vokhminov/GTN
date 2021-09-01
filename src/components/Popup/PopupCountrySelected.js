@@ -1,27 +1,35 @@
 import React from "react";
 import classNames from "classnames";
 import { useDispatch, useSelector } from "react-redux";
-// import Map from './Map';
+
 import { Scrollbars } from "react-custom-scrollbars";
-import { setVisiblePopupCountry } from "../../redux/actions/popup";
-import { setSelectedEngine, setSelectedCountry, setDataEngines } from "../../redux/actions/filter";
-import { setAllowSearch } from "../../redux/actions/form";
+import { setVisiblePopupCountry } from "../../redux/popup";
+import { setSelectedEngine, setSelectedCountry, setDataEngines } from "../../redux/aggregate";
 import { ReactSVG, IconCloseInp, IconSearchGrey, IconMarkerPopup } from "../../images";
 import { searchAPI } from "../../api/api";
+
+// interface SortableType = {
+//     name: string,
+//     acr: string,
+//     icon: string,
+//     translation: string,
+// }
 
 const PopupCountrySelected = (props) => {
     const { handleOutsideClick, closePopup, liveSearch, t, i18n } = props;
 
     const [sortTranslation, setSortTranslation] = React.useState(null);
-    // const [ tabActive, setTabActive ] = React.useState("list");
+
     const refCountries = React.useRef(null);
     const refInputSearch = React.useRef(null);
     const popup_content = React.useRef(null);
 
     const { openPopupCountry } = useSelector(({ popup }) => popup);
-    const { countries, selectedLanguage } = useSelector(({ filter }) => filter);
+    const { countries } = useSelector(({ aggregate }) => aggregate);
+    const { selectedLanguage } = useSelector(({ languages }) => languages);
     const dispatch = useDispatch();
 
+    // TS country: SortableType
     function checkCountry(country) {
         dispatch(setSelectedCountry(country));
 
@@ -30,8 +38,8 @@ const PopupCountrySelected = (props) => {
             .then((response) => {
                 if (response.status === 200) {
                     dispatch(setDataEngines(response.data));
-                    dispatch(setAllowSearch(false));
-                    dispatch(setSelectedEngine(Object.values(response.data.engines)[0].name));
+                    console.log('Object.values(response.data.engines)[0].name',Object.values(response.data.engines)[0].name)
+                    dispatch(setSelectedEngine(Object.values(response.data.engines)[0].name)); // TS string
                 }
             })
             .catch((error) => {
@@ -48,7 +56,7 @@ const PopupCountrySelected = (props) => {
             const refreshId = setInterval(() => {
                 if (selectedLanguage.acronym === i18n.language) {
                     const sortable = [];
-
+// TS sortable: SortableType
                     Object.keys(countries).map((elem) =>
                         sortable.push({
                             name: elem,
@@ -60,21 +68,11 @@ const PopupCountrySelected = (props) => {
 
                     clearInterval(refreshId);
                     sortable.sort((a, b) => (a.translation > b.translation ? 1 : -1));
-
-                    // let sortElements = {};
-                    // sortable.map(elem=> sortElements[elem[0]] = elem[1] );
-                    // sortable.map(elem=> console.log(elem) );
-                    // setSortTranslation(sortElements);
-
                     setSortTranslation(sortable);
                 }
             }, 10);
         }
     }, [countries, selectedLanguage, t, i18n]);
-
-    /* const tabContent = (e) => {
-        setTabActive(e.target.dataset.tab);
-    } */
 
     return (
         <div
@@ -86,9 +84,9 @@ const PopupCountrySelected = (props) => {
             }
         >
             <div className="popup-body">
-                <div className="popup-content popup_modal_main" ref={popup_content}>
+                <div className="popup-main" ref={popup_content}>
                     <div
-                        className="popup_modal__close"
+                        className="popup_close"
                         onClick={() => closePopup(setVisiblePopupCountry)}
                     >
                         <ReactSVG src={IconCloseInp} />
@@ -102,9 +100,9 @@ const PopupCountrySelected = (props) => {
                         </p>
                     </div>
 
-                    <div className="popup_modal_cont">
-                        <div className="popup_modal_top">
-                            <div className="popup_modal_search">
+                    <div className="popup_content">
+                        <div className="popup_content_top">
+                            <div className="popup_content_search">
                                 <input
                                     type="text"
                                     name="s_lang"
@@ -115,17 +113,9 @@ const PopupCountrySelected = (props) => {
                                 <ReactSVG src={IconSearchGrey} className="icon_search" />
                             </div>
 
-                            {/* <div className="count_regions">
-                                <div className={`crtab ${tabActive === "list" ? 'active' : ''}`} onClick={tabContent} data-tab="list"><span>Список</span></div>
-                                <div className={`crtab ${tabActive === "world" ? 'active' : ''}`} onClick={tabContent} data-tab="world"><span>Карта</span></div>
-                            </div> */}
                         </div>
 
-                        {/* {tabActive === "list" && }
-
-                        {tabActive === "world" && <Map/>} */}
-
-                        <div className="popup_modal_row">
+                        <div className="popup_content_row">
                             <Scrollbars
                                 autoHide
                                 renderTrackVertical={(props) => (
@@ -140,13 +130,13 @@ const PopupCountrySelected = (props) => {
                                     {sortTranslation &&
                                         sortTranslation.map((elem, i) => (
                                             <div
-                                                className={`popup_modal_elem country ${elem.name}`}
+                                                className={`popup_content_elem country ${elem.name}`}
                                                 key={i}
                                                 onClick={() => {
                                                     checkCountry(elem);
                                                 }}
                                             >
-                                                <div className="popup_modal_elem_main">
+                                                <div className="popup_content_elem_main">
                                                     <img src={elem.icon} alt="" />
                                                     <span className="lang">{elem.translation}</span>
                                                 </div>

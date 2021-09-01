@@ -155,7 +155,7 @@ function Keyboard({
                             }}
                         >
                             <img src={`/images/flags/${elem}.svg`} alt="" />
-                            <span>{t(`languages.${languages[elem].acronim}`)}</span>
+                            <span>{t(`languages.${languages[elem].acronim}`,"")}</span>
                         </div>
                     ))}
                 </div>

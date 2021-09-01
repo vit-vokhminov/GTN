@@ -1,14 +1,15 @@
 import React from "react";
 import { ReactSVG } from "../../images";
 import classNames from "classnames";
-import { useSelector } from "react-redux";
+import {useWindowSize} from 'react-use';
 
 function CabinetSidebar({ pages, handleSidebar, menuBt, tabActive, openTabFromSidebar }) {
-    const { windowSize } = useSelector(({ settings }) => settings);
+
+    const {width} = useWindowSize();
 
     return (
         <>
-            {(windowSize && windowSize[0]) <= 1024 && (
+            {width <= 1024 && (
                 <>
                     <div
                         className={classNames("cabinet-insert", { active: menuBt })}

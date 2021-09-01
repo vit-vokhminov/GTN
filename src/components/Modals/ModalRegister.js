@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { searchAPI } from "../../api/api";
 import { useDispatch } from "react-redux";
-import { setUserData } from "../../redux/actions/settings";
+import { setUserData } from "../../redux/user";
 
 const ModalRegister = ({ refModal, newModal }) => {
     const popup_content = React.useRef(null);

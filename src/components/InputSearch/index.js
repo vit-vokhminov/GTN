@@ -4,7 +4,7 @@ import "./styleInputSearch.css";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-import { setSearchQuery, setAllowSearch } from "../../redux/actions/form";
+import { setStartSearch, setSearchQuery } from "../../redux/form";
 import Keyboard from "./Keyboard";
 import InputCountry from "./InputCountry";
 import SpanResultCountry from "./SpanResultCountry";
@@ -17,13 +17,14 @@ import {
     IconSearch,
     IconSearchMin,
 } from "../../images";
+import {useWindowSize} from 'react-use';
 
 function InputSearch() {
     const { t } = useTranslation();
     const dispatch = useDispatch();
     const history = useHistory();
     const { searchQuery } = useSelector(({ form }) => form);
-    const { windowSize } = useSelector(({ settings }) => settings);
+    const {width} = useWindowSize();
     const [searchingInput, setSearchingInput] = React.useState("");
     const [sendForm, setSendForm] = React.useState(false);
     const { register, handleSubmit } = useForm({});
@@ -36,9 +37,11 @@ function InputSearch() {
         setSearchingInput(e.target.value);
     }
     function submitForm() {
-        dispatch(setAllowSearch(true));
-        dispatch(setSearchQuery(searchingInput));
-        setSendForm(true);
+        if(searchQuery !== searchingInput || history.location.pathname === "/"){
+            dispatch(setStartSearch(true));
+            dispatch(setSearchQuery(searchingInput));
+            setSendForm(true);
+        }
     }
 
     React.useEffect(() => {
@@ -81,7 +84,7 @@ function InputSearch() {
                 <div className="input-search_wrap">
                     <div className="input-search_cont">
                         <div className="input-search_main">
-                            {/* {!pageMain && <InputCountry /> } */}
+
                             <InputCountry />
 
                             <SpanResultCountry />
@@ -100,8 +103,8 @@ function InputSearch() {
                                 onChange={handleChange}
                                 value={searchingInput}
                                 placeholder={
-                                    windowSize && windowSize[0] > 580
-                                        ? t("inputSearch.placeholder")
+                                    (width > 580)
+                                        ? t("inputSearch.placeholder","")
                                         : ""
                                 }
                                 ref={refInput}
@@ -125,7 +128,7 @@ function InputSearch() {
 
                                 <div
                                     className={classNames("icon_microphone", {
-                                        hide: searchingInput && windowSize[0] <= 580,
+                                        hide: searchingInput && width <= 580,
                                     })}
                                 >
                                     <ReactSVG
@@ -135,10 +138,10 @@ function InputSearch() {
                                 </div>
 
                                 <button type="submit" className="button_submit">
-                                    {(windowSize && windowSize[0]) > 580 && (
+                                    {(width) > 580 && (
                                         <ReactSVG src={IconSearch} className="icon_search" />
                                     )}
-                                    {(windowSize && windowSize[0]) <= 580 && (
+                                    {(width) <= 580 && (
                                         <ReactSVG src={IconSearchMin} className="icon_search" />
                                     )}
                                 </button>

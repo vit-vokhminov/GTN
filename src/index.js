@@ -1,25 +1,24 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react';
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
-import { FormProvider } from "./FormContext";
+
+import "./assets/css/resetNormalize.min.css";
 import "./index.css";
 import "./i18n";
 
-import store from "./redux/store";
+import {store} from "./redux/store";
 import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <FormProvider>
-        <Router>
+    <Router>
+        <Suspense fallback={null}>
             <Provider store={store}>
-                <Suspense fallback={<div />}>
-                    <App />
-                </Suspense>
+                <App />
             </Provider>
-        </Router>
-    </FormProvider>,
+        </Suspense>
+    </Router>,
     document.getElementById("root")
 );
 

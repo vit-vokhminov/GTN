@@ -28,7 +28,7 @@ const pages = [
 function Cabinet() {
     const [tabActive, setTabActive] = React.useState(0);
     const [menuBt, setMenuBt] = React.useState(false);
-    const { userData } = useSelector(({ settings }) => settings);
+    const { userData } = useSelector(({ user }) => user);
 
     if (!localStorage.getItem("auth_identity_token") || !userData) {
         return <Redirect to={"/"} />;
@@ -69,4 +69,4 @@ function Cabinet() {
     );
 }
 
-export default Cabinet;
+export default React.memo(Cabinet);

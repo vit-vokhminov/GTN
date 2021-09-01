@@ -36,6 +36,24 @@
         "langPlaceholder": "Interface language",
         "langCountry": "Selecting a country to search"
     },
+	"modals": {
+		"modalAuth": {
+			"title": "Login",
+			"inputEmailPlaceholder": "Your e-mail",
+			"inputEmailError": "Enter your e-mail",
+			"inputPasswordPlaceholder": "Password",
+			"inputPasswordError": "Enter your password",
+			"answerError": "Invalid username or password",
+			"btnSubmit": "Login",
+			"btnRegistration": "Register",
+			"btnRecovery-password": "Restore password"
+		},
+		"modalRegister": {
+			"111111": "222222",
+			"111111": "222222",
+			"111111": "222222"
+		}
+	},
     "country": {
         "world": "World",
         "russia": "Russian",
@@ -237,5 +255,10 @@
         "line_3_Text" : "Когда вы свяжетесь с нами по электронной почте или через наш центр поддержки, мы будем использовать вашу контактную информацию, чтобы ответить вам. Мы не будем продавать или передавать эту информацию кому-либо еще. У вас будет возможность подписаться на нашу рассылку новостей, от которой вы можете отказаться в любое время.",
         "line_4_Snip" : "Мы не раскрываем и не продаем вашу контактную информацию",
         "line_4_Text" : "Когда вы свяжетесь с нами по электронной почте или через наш центр поддержки, мы будем использовать вашу контактную информацию, чтобы ответить вам. Мы не будем продавать или передавать эту информацию кому-либо еще. У вас будет возможность подписаться на нашу рассылку новостей, от которой вы можете отказаться в любое время."
+    },
+    "test": {
+        "txt1" : "Your masterpiece is ready",
+        "txt2" : "The meaning of the site",
+        "txt3" : "New model"
     }
 }

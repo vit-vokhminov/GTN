@@ -4,11 +4,11 @@ import "./styleModals.css";
 import classNames from "classnames";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { setUserEmail } from "../../redux/actions/settings";
+import { setUserEmail } from "../../redux/user";
 import { searchAPI } from "../../api/api";
-import validateEmail from "../../utils/validateEmail";
+import {validateEmail} from "../../utils";
 
-const ModalTest = ({ refModal, newModal }) => {
+const ModalRecoveryPassword = ({ refModal, newModal }) => {
     const dispatch = useDispatch();
 
     const { register, handleSubmit, errors } = useForm({});
@@ -48,7 +48,7 @@ const ModalTest = ({ refModal, newModal }) => {
     };
 
     return (
-        <div id="modal-test" className="modal" ref={refModal}>
+        <div id="modal-recovery_password" className="modal" ref={refModal}>
             <div className="modal-content">
                 <form onSubmit={handleSubmit(onSubmitForm)}>
                     <div className="modal__title">
@@ -92,4 +92,4 @@ const ModalTest = ({ refModal, newModal }) => {
     );
 };
 
-export default React.memo(ModalTest);
+export default React.memo(ModalRecoveryPassword);

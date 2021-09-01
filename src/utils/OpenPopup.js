@@ -1,18 +1,9 @@
-import { useEffect } from "react";
+const openPopup = (dispatch, action) => {
+    document.body.style.paddingRight = `${
+        window.innerWidth - document.documentElement.clientWidth
+    }px`;
+    document.body.style.overflow = "hidden";
+    dispatch(action(true));
+};
 
-export default function ScrollToTopOnMount() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
-    return null;
-}
-
-// function openPopup(action) {
-//     document.body.style.paddingRight = `${
-//         window.innerWidth - document.documentElement.clientWidth
-//     }px`;
-//     document.body.style.overflowY = "hidden";
-//     dispatch(action(true));
-// }
-// return openPopup;
+export default openPopup;

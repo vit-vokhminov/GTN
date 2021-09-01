@@ -2,14 +2,18 @@ import React from "react";
 import "./styleSearchSystem.css";
 import SearchSystemItem from "./SearchSystemItem";
 import Carousel from "react-elastic-carousel";
-// import Carousel, {consts} from "react-elastic-carousel";
 import { useSelector, useDispatch } from "react-redux";
-import { setSelectedEngine, setSearchCategory } from "../../redux/actions/filter";
+import { setSearchCategory } from "../../redux/filter";
+import { setSelectedEngine } from "../../redux/aggregate";
+import { setStartSearch } from "../../redux/form";
 import { ReactSVG, IconArrowLeft, IconArrowRight } from "../../images";
+import {useWindowSize} from 'react-use';
 
 function SearchSystem() {
-    const { selectedEngine, dataEngines } = useSelector(({ filter }: any) => filter);
-    const { windowSize } = useSelector(({ settings }: any) => settings);
+
+    const { selectedEngine, dataEngines } = useSelector(({ aggregate }: any) => aggregate);
+
+    const {width} = useWindowSize();
     const dispatch = useDispatch();
 
     const choiceEngine = (e: React.ChangeEvent<HTMLElement>): void => {
@@ -21,6 +25,7 @@ function SearchSystem() {
             let obj = selectedEngine.categories;
             let keys = Object.keys(obj);
             dispatch(setSearchCategory(obj[keys[0]]));
+            dispatch(setStartSearch(true));
         }
     }, [selectedEngine, dispatch]);
 
@@ -32,7 +37,7 @@ function SearchSystem() {
     ];
 
     const System = () => {
-        if (dataEngines.engines.length > 5 || (windowSize && windowSize[0] <= 650)) {
+        if (dataEngines.engines.length > 5 || (width <= 650)) {
             return (
                 <div className="search-system_rec">
                     <Carousel

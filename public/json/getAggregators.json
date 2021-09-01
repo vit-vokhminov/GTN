@@ -1,0 +1,107 @@
+{
+  "data": {
+    "farhub": {
+      "address": "162.55.163.102:8000",
+      "api_key": "9ffb9cbf16936b67d2e70d87d037e0b6"
+    },
+    "translator": {
+      "query": "google",
+      "result": "belorus"
+    },
+    "langs": "de_DE",
+    "engines": [
+      {
+        "name": "yahoo",
+        "icon": "img/search/yahoo.svg",
+        "categories": [
+          "general"
+        ],
+        "paging": [
+          "general"
+        ]
+      },
+      {
+        "name": "bing",
+        "icon": "img/search/bing.svg",
+        "categories": [
+          "images",
+          "videos"
+        ],
+        "paging": [
+          "images",
+          "videos"
+        ]
+      },
+      {
+        "name": "duckduckgo",
+        "icon": "img/search/duckduckgo.svg",
+        "categories": [
+          "general",
+          "images"
+        ],
+        "paging": [
+          "images"
+        ]
+      },
+      {
+        "name": "startpage",
+        "icon": "img/search/startpage.svg",
+        "categories": [
+          "general"
+        ],
+        "paging": [
+          "general"
+        ]
+      },
+      {
+        "name": "google",
+        "icon": "img/search/google.svg",
+        "categories": [
+          "general",
+          "images"
+        ],
+        "paging": [
+          "general"
+        ]
+      },
+      {
+        "name": "youtube",
+        "icon": "img/search/youtube.svg",
+        "categories": [
+          "videos"
+        ],
+        "paging": [
+          "videos"
+        ]
+      }
+    ]
+  },
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-length": "1077",
+    "content-type": "application/json"
+  },
+  "config": {
+    "url": "country/select?api=225cb8d8b02e61188fc855b5b22cf901",
+    "method": "post",
+    "data": "{\"country\":\"germany\"}",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "baseURL": "https://light-search.com:5555/",
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1
+  },
+  "request": {}
+}

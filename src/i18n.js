@@ -3,6 +3,9 @@ import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
+// дока
+// https://www.robinwieruch.de/react-internationalization
+
 let lang = "";
 if (localStorage.getItem("i18nextLng")) {
     lang = localStorage.getItem("i18nextLng");
@@ -11,17 +14,20 @@ if (localStorage.getItem("i18nextLng")) {
 }
 
 i18n
-    // Enables the i18next backend
+    // Подключение бэкенда i18next
     .use(Backend)
-    // Enable automatic language detection
+    // Автоматическое определение языка
     .use(LanguageDetector)
-    // Enables the hook initialization module
+    // модуль инициализации
     .use(initReactI18next)
     .init({
-        // Standard language used
+        // Стандартный язык
+        react: {
+            useSuspense: false,
+        },
         fallbackLng: lang,
         debug: false,
-        // Detects and caches a cookie from the language provided
+        // Распознавание и кэширование языковых кук
         detection: {
             order: ["queryString", "cookie"],
             cache: ["cookie"],

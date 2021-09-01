@@ -4,31 +4,26 @@ import { useSelector } from "react-redux";
 import { searchAPI } from "../../api/api";
 
 const ModalThanks = ({ refModal, setVisibleModal }) => {
-    const { userEmail } = useSelector(({ settings }) => settings);
+    const { userData } = useSelector(({ user }) => user);
 
-    const sendRecoveryPassword = (email, setNoEmail) => {
+    const handleSendEmail = () => {
         searchAPI
-            .getRecoveryPassword(email)
+            .getSendEmail(userData.email)
             .then((response) => {
                 if (response.status === 200) {
-                    setNoEmail(false);
+                    //newModal("thanks");
+                    //console.log("getSendEmail Отправка Email", response.data);
                 }
             })
             .catch((error) => {
-                console.log(error);
-                setNoEmail(true);
                 if (error.response) {
-                    console.log(error.response.data);
+                    console.log("getSendEmail error", error);
                 }
             });
     };
 
-    const handleRecoveryPassword = () => {
-        sendRecoveryPassword(userEmail);
-    };
-
     return (
-        <div id="modal-test" className="modal" ref={refModal}>
+        <div id="modal-thanks" className="modal" ref={refModal}>
             <div className="modal-content">
                 <div className="modal-form">
                     <div className="modal__title">СПАСИБО!</div>
@@ -45,7 +40,7 @@ const ModalThanks = ({ refModal, setVisibleModal }) => {
                         </button>
                     </div>
                     <div className="modal-button_line">
-                        <div className="btnLink" onClick={() => handleRecoveryPassword()}>
+                        <div className="btnLink" onClick={() => handleSendEmail()}>
                             Отправить письмо повторно
                         </div>
                     </div>

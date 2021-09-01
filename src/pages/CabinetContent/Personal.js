@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function Personal() {
-    const { userData } = useSelector(({ settings }) => settings);
+    const { userData } = useSelector(({ user }) => user);
 
     return (
         <div className="cabinet_personal">

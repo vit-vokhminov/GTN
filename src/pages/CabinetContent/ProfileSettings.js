@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useSelector } from "react-redux";
+import {useWindowSize} from 'react-use';
 
 function ProfileSettings() {
-    const { windowSize } = useSelector(({ settings }) => settings);
 
+    const {width} = useWindowSize();
     const { register, handleSubmit, errors } = useForm({});
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
@@ -86,7 +86,7 @@ function ProfileSettings() {
                             {errors.email && <p className="form_error">{errors.email.message}</p>}
                         </div>
 
-                        {windowSize && windowSize[0] > 440 && agreementCheckbox()}
+                        {width > 440 && agreementCheckbox()}
                     </div>
                     <div className="profilesettings_colum">
                         <div className="profilesettings_elem">
@@ -138,7 +138,7 @@ function ProfileSettings() {
                             )}
                         </div>
 
-                        {windowSize && windowSize[0] <= 440 && agreementCheckbox()}
+                        {width <= 440 && agreementCheckbox()}
 
                         <div className="profilesettings_elem">
                             <br />
@@ -156,19 +156,19 @@ function ProfileSettings() {
                         <div className="profilesettings_elem deleteprofile">
                             <p className="profilesettings_title opasNone">Удалить профиль</p>
 
-                            {windowSize && windowSize[0] > 440 && (
+                            {width > 440 && (
                                 <button type="submit" className="btn btn-border grey deleteprofile">
                                     Удалить профиль
                                 </button>
                             )}
-                            {windowSize && windowSize[0] <= 440 && (
+                            {width <= 440 && (
                                 <button type="submit" className="deleteprofile">
                                     Удалить профиль
                                 </button>
                             )}
                         </div>
                         <div className="profilesettings_elem">
-                            {windowSize && windowSize[0] > 440 && (
+                            {width > 440 && (
                                 <p>
                                     Это приведет к безвозвратному удалению вашей учетной записи и
                                     всех ее данных. Вы не сможете повторно активировать эту учетную

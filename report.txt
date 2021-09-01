@@ -1,5 +1,5 @@
 
-C:\OSPanel\domains\GoTrueNet_Front\src\App.js
+C:\OSPanel\domains\GoTrueNet_Front\src\App.tsx
   47:11  warning  Unexpected console statement                                            no-console
   67:20  error    'response' is already declared in the upper scope on line 56 column 14  no-shadow
   73:15  warning  Unexpected console statement                                            no-console
@@ -59,17 +59,17 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\CabinetComponents\CabinetMenu.
   99:43  error  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   99:91  error  Do not use Array index in keys                                                                                                                                                                                                                                                                                                                                    react/no-array-index-key
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Categories\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Categories\index.tsx
   32:5   error  JSX not allowed in files with extension '.js'                                                   react/jsx-filename-extension
   36:16  error  Do not use Array index in keys                                                                  react/no-array-index-key
   38:1   error  This line has a length of 108. Maximum allowed is 100                                           max-len
   38:11  error  Visible, non-interactive elements with click handlers must have at least one keyboard listener  jsx-a11y/click-events-have-key-events
   38:11  error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\EarthGlobe\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\EarthGlobe\index.tsx
   6:5  error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Footer\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Footer\index.tsx
    7:10  error  'setVisiblePopupPropose' is defined but never used                                                                                                                                                                                                                                                                                                                no-unused-vars
   10:8   error  Identifier 'icon_social_vk1' is not in camel case                                                                                                                                                                                                                                                                                                                 camelcase
   10:29  error  'C:\OSPanel\domains\GoTrueNet_Front\src\assets\images\icon-social-vk.png' imported multiple times                                                                                                                                                                                                                                                                 import/no-duplicates
@@ -110,7 +110,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\KeyboardB
   65:11  error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
   69:18  error  Do not use Array index in keys                                                                  react/no-array-index-key
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\index.tsx
     4:35  error  Parse errors in imported module './languages': Unexpected token = (33:13)                                                                                              import/no-named-as-default
     4:35  error  Parse errors in imported module './languages': Unexpected token = (33:13)                                                                                              import/no-named-as-default-member
    15:3   error  'searchingInput' is missing in props validation                                                                                                                        react/prop-types
@@ -151,13 +151,13 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\index.js
   130:19  error  Visible, non-interactive elements with click handlers must have at least one keyboard listener                                                                         jsx-a11y/click-events-have-key-events
   130:19  error  Static HTML elements with event handlers require a role                                                                                                                jsx-a11y/no-static-element-interactions
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\languages\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\Keyboard\languages\index.tsx
   33:13  error  Parsing error: Unexpected token =
 
 C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\SpanResultCountry.js
   8:5  error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\index.tsx
    25:10  error  Identifier 'eventKeyPressBy_k' is not in camel case                                             camelcase
    25:29  error  Identifier 'setEventKeyPressBy_k' is not in camel case                                          camelcase
    57:9   error  Identifier 'eventKeyPressBy_k' is not in camel case                                             camelcase
@@ -168,7 +168,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\InputSearch\index.js
   109:15  error  Visible, non-interactive elements with click handlers must have at least one keyboard listener  jsx-a11y/click-events-have-key-events
   109:15  error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Pagination\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Pagination\index.tsx
   5:3  error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
 
 C:\OSPanel\domains\GoTrueNet_Front\src\components\Popup\Map.js
@@ -700,7 +700,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Popup\PopupThanks.js
   42:13  error  Visible, non-interactive elements with click handlers must have at least one keyboard listener  jsx-a11y/click-events-have-key-events
   42:13  error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Popup\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Popup\index.tsx
     1:1   error    Definition for rule 'react-hooks/exhaustive-deps' was not found  react-hooks/exhaustive-deps
    38:38  error    Identifier 'popup_content' is not in camel case                  camelcase
    59:9   warning  Unexpected console statement                                     no-console
@@ -794,7 +794,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\ResultsContent\ResultsElemVide
    6:3   error  JSX not allowed in files with extension '.js'    react/jsx-filename-extension
   10:21  error  Identifier 'thumbnail_src' is not in camel case  camelcase
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\ResultsContent\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\ResultsContent\index.tsx
    59:7    warning  Unexpected console statement                                      no-console
    64:13   warning  Unexpected console statement                                      no-console
    85:11   warning  Unexpected console statement                                      no-console
@@ -821,7 +821,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Select\SelectOption.js
   8:3   error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
   8:3   error  JSX not allowed in files with extension '.js'                                                   react/jsx-filename-extension
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Select\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Select\index.tsx
    8:19  error  'option' is missing in props validation                                                         react/prop-types
   12:81  error  'option[].engine' is missing in props validation                                                react/prop-types
   43:5   error  JSX not allowed in files with extension '.js'                                                   react/jsx-filename-extension
@@ -832,7 +832,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Select\index.js
   63:24  error  Do not use Array index in keys                                                                  react/no-array-index-key
   64:19  error  Prop spreading is forbidden                                                                     react/jsx-props-no-spreading
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Sidebar\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Sidebar\index.tsx
   19:5   error  JSX not allowed in files with extension '.js'                                                                                                                                                                                                                                                                                                                     react/jsx-filename-extension
   20:7   error  Visible, non-interactive elements with click handlers must have at least one keyboard listener                                                                                                                                                                                                                                                                    jsx-a11y/click-events-have-key-events
   20:7   error  Static HTML elements with event handlers require a role                                                                                                                                                                                                                                                                                                           jsx-a11y/no-static-element-interactions
@@ -840,13 +840,13 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Sidebar\index.js
   33:17  error  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   56:13  error  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Widget\WidgetCountry\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Widget\WidgetCountry\index.tsx
   19:5   error  JSX not allowed in files with extension '.js'          react/jsx-filename-extension
   24:1   error  This line has a length of 109. Maximum allowed is 100  max-len
   35:1   error  This line has a length of 114. Maximum allowed is 100  max-len
   52:11  error  Missing an explicit type attribute for button          react/button-has-type
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Widget\WidgetNews\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Widget\WidgetNews\index.tsx
   12:5   error  JSX not allowed in files with extension '.js'                                                                                                                                                                                                                                                                                                                     react/jsx-filename-extension
   15:11  error  Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                     react/button-has-type
   18:11  error  Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                     react/button-has-type
@@ -857,7 +857,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Widget\WidgetNews\index.js
   42:11  error  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   48:11  error  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Новая папка\CabinetSearch\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Новая папка\CabinetSearch\index.tsx
   3:43  error  Unable to resolve path to module '../index'    import/no-unresolved
   3:43  error  Missing file extension for "../index"          import/extensions
   7:5   error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
@@ -873,7 +873,7 @@ C:\OSPanel\domains\GoTrueNet_Front\src\components\Новая папка\CabinetS
   3:24  error  Missing file extension for "../index"          import/extensions
   9:5   error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
 
-C:\OSPanel\domains\GoTrueNet_Front\src\components\Новая папка\CabinetSidebar\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\components\Новая папка\CabinetSidebar\index.tsx
   16:5  error  JSX not allowed in files with extension '.js'                                                   react/jsx-filename-extension
   17:7  error  Visible, non-interactive elements with click handlers must have at least one keyboard listener  jsx-a11y/click-events-have-key-events
   17:7  error  Static HTML elements with event handlers require a role                                         jsx-a11y/no-static-element-interactions
@@ -887,10 +887,10 @@ C:\OSPanel\domains\GoTrueNet_Front\src\images.js
   34:21  error  Identifier 'IMG_payPal' is not in camel case        camelcase
   37:21  error  Identifier 'IMG_personalLogo' is not in camel case  camelcase
 
-C:\OSPanel\domains\GoTrueNet_Front\src\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\index.tsx
   14:3  error  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
 
-C:\OSPanel\domains\GoTrueNet_Front\src\utils\index.js
+C:\OSPanel\domains\GoTrueNet_Front\src\utils\index.tsx
   1:10  error  Prefer default export  import/prefer-default-export
 
 ✖ 796 problems (778 errors, 18 warnings)

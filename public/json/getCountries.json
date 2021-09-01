@@ -1,0 +1,38 @@
+{
+  "data": {
+    "germany": {
+      "icon": "https://light-search.com:5555/static/country/flags/svg/germany.svg",
+      "acr": "GER"
+    },
+    "world": {
+      "icon": "https://light-search.com:5555/static/country/flags/svg/world.svg",
+      "acr": "WLD"
+    }
+  },
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-length": "206",
+    "content-type": "application/json"
+  },
+  "config": {
+    "url": "country/all?api=225cb8d8b02e61188fc855b5b22cf901",
+    "method": "get",
+    "headers": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "baseURL": "https://light-search.com:5555/",
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1
+  },
+  "request": {}
+}

@@ -1,0 +1,63 @@
+filter
+	searchCategory "general"
+form
+	startSearchfalse true	
+	choiceCountry "germany"
+	
+result
+resultSearchnull{
+  "general": [
+    {
+      "link": "https://en.wiktionary.org/wiki/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE",
+      "original": {
+        "snippet": "немно́го • (nemnógo) (+ genitive case). a little, some · Я немно́го понима́ю по-​ру́сски. Ja nemnógo ponimáju po-rússki. I understand a little bit of Russian.",
+        "title": "немного - Wiktionary"
+      },
+      "snippet": "немно́го • (nemnógo) (+ genitive case). a little, some · Я немно́го понима́ю по-​ру́сски. Ja nemnógo ponimáju po-rússki. I understand a little bit of Russian.",
+      "title": "немного - Wiktionary"
+    },
+    {
+      "link": "https://context.reverso.net/translation/russian-english/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE",
+      "original": {
+        "snippet": "Translations in context of \"немного\" in Russian-English from Reverso Context: немного времени, еще немного, хоть немного, немного больше, немного ...",
+        "title": "немного - Translation into English - examples Russian ..."
+      },
+      "snippet": "Translations in context of \"немного\" in Russian-English from Reverso Context: немного времени, еще немного, хоть немного, немного больше, немного ...",
+      "title": "немного - Translation into English - examples Russian ..."
+    },
+    {
+      "link": "https://context.reverso.net/translation/russian-english/%D1%81%D0%BE%D0%B2%D1%81%D0%B5%D0%BC+%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE",
+      "original": {
+        "snippet": "Translations in context of \"совсем немного\" in Russian-English from Reverso Context: совсем немного времени, осталось совсем немного.",
+        "title": "совсем немного - Translation into English - examples ..."
+      },
+      "snippet": "Translations in context of \"совсем немного\" in Russian-English from Reverso Context: совсем немного времени, осталось совсем немного.",
+      "title": "совсем немного - Translation into English - examples ..."
+    },
+    {
+      "link": "https://en.bab.la/dictionary/english-russian/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE",
+      "snippet": "Translation for 'немного' in the free English-Russian dictionary and many other Russian translations.",
+      "title": "НЕМНОГО - Translation in Russian - bab.la"
+    },
+    {
+      "link": "https://www.duolingo.com/dictionary/Russian/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE/3b794e1c8aa94995804b34b3c1c8fa31",
+      "snippet": "This dress is a bit large for me, but for you it is just right. 3 Comments. Пальто. ему. немного. велико . The overcoat is a bit large for him. 4 Comments ...",
+      "title": "What does \"немного\" mean in Russian? - Duolingo"
+    },
+    {
+      "link": "https://www.youtube.com/c/NemnogoNervno",
+      "snippet": "Nemnogo Nervno” is a traveling fantasy / dream-folk / indie project from Ukraine, was founded in 2007. Under their belt there are tours in Russia, Ukraine, ...",
+      "title": "Немного Нервно | Nemnogo Nervno - YouTube"
+    },
+    {
+      "link": "https://www.google.com/maps/search/?api=1&query=1554.%20%D0%92%D1%81%D0%B5%20%D0%9E%20%D0%9A%D0%BE%D1%84%D0%B5%20%D0%98%20%D0%9D%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%9E%20%D0%95%D0%B4%D0%B5%2C%2018%20Moskovskaya%20Ulitsa%2C%20Kaluga%2C%20Kaluzhskaya%20oblast%27&query_place_id=ChIJ6UXncs67NEERGJH1sxc9vjo",
+      "snippet": "Все О Кофе И Немного О Еде, 18 Moskovskaya Ulitsa, Kaluga, Kaluzhskaya oblast'. Your location. Trails. Dedicated lanes. Bicycle-friendly roads. Dirt/​unpaved ...",
+      "title": "1554. Все О Кофе И Немного О Еде, 18 Moskovskaya Ulitsa ..."
+    },
+    {
+      "link": "https://www.instagram.com/p/CMROJ0fFBzN/?hl=en",
+      "snippet": "Mar 11, 2021 — Sonya Tayurskaya Little Big shared a photo on Instagram: “Немного фоточек с бэкстейджа клипа Sex Machine ” • See 477 photos and ...",
+      "title": "Sonya Tayurskaya Little Big on Instagram: “Немного фоточек ..."
+    }
+  ]
+}	

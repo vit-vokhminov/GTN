@@ -1,3 +1,5 @@
-//export { default as binarySearch } from "./binarySearch";
-export { default as ScrollToTopOnMount } from "./ScrollToTopOnMount";
-//export { default as OpenPopup } from './OpenPopup';
+export { default as handleOutside } from './handleOutside';
+export { default as openPopup } from './openPopup';
+export { default as liveSearch } from './liveSearch';
+export { default as validateEmail } from './validateEmail';
+export { default as algorithmBinarySearch } from './algorithmBinarySearch';

@@ -6,17 +6,19 @@ npm install react-i18next i18next i18next-http-backend i18next-browser-languaged
 
 
 npm install react-svg
-
+npm i react-use
 //typescript
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 npm i eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npm i --save-dev @types/react-redux
+npm install --save @types/react-router-dom
 
 // eslint-disable-next-line react-hooks/exhaustive-deps
 
 git reset --hard
 // eslint-disable-next-line react-hooks/exhaustive-deps
 
+npm i next
 
 //test
 //test2

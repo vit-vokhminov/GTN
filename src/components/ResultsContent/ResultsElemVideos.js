@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ResultsElem = ({ link, thumbnail_src, title }) => (
+const ResultsElemVideos = ({ link, thumbnail_src, title }) => (
     <div className="video-elem">
         <div className="video-elem_main">
             <Link to={link} target="_blank">
@@ -14,4 +14,5 @@ const ResultsElem = ({ link, thumbnail_src, title }) => (
     </div>
 );
 
-export default ResultsElem;
+
+export default React.memo(ResultsElemVideos);
