@@ -1,0 +1,183 @@
+.keyboard {
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 15px);
+    z-index: 999;
+    border: 1px solid #d6d5d5;
+    border-radius: 5px;
+    touch-action: manipulation;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.keyboard_icon-close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: -3px;
+    right: -22px;
+    cursor: pointer;
+}
+.keyboard_icon-close svg {
+    width: 14px;
+    height: 14px;
+}
+.keyboard_main {
+    background-color: #ececec;
+    padding: 5px;
+    border-radius: 5px;
+}
+.k_row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+.k_btn {
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 1px;
+    background: white;
+    border-bottom: 1px solid #b5b5b5;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+    font-size: 13px;
+    color: #3e3e3e;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.k_btn:hover {
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.6);
+}
+.k_btn:active,
+.k_btn.active {
+    background: #fecb31;
+}
+
+.k_btn span {
+    pointer-events: none;
+}
+.k_btn.k_bksp,
+.k_btn.k_enter,
+.k_btn.k_shift,
+.k_btn.k_slash {
+    flex-grow: 1;
+    padding-right: 10px;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.k_btn.k_shift:first-of-type,
+.k_btn.k_caps_lock,
+.k_btn.k_tab {
+    padding: 0 0 0 10px;
+    flex-grow: 1;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.k_btn.k_symbols {
+    flex-grow: 1;
+}
+.k_btn.k_space {
+    flex-grow: 2;
+}
+.k_btn.k_lang {
+    flex-grow: 1;
+}
+
+.k_choice_lang {
+    width: 100%;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top: calc(100% + 7px);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.k_choice_lang__elem {
+    padding: 5px 5px;
+    width: 33.333%;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.k_choice_lang__elem img {
+    width: 21px;
+    margin-right: 5px;
+}
+.k_choice_lang__elem span {
+    font-size: 13px;
+}
+.k_choice_lang__elem:hover {
+    color: #fecb31;
+}

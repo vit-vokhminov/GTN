@@ -1,0 +1,290 @@
+.har {
+    position: absolute;
+    top: 14px;
+    left: 71px;
+}
+
+.globe-container,
+.globe {
+    width: 50px;
+    height: 50px;
+    -webkit-overflow: hidden;
+    -moz-overflow: hidden;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.globe-container {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    transform: scale(1.1);
+}
+.globe {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+.globe-worldmap,
+.globe-worldmap-front,
+.globe-worldmap-back,
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+    position: absolute;
+    display: block;
+    margin: 0;
+}
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.globe-worldmap {
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    -webkit-overflow: hidden;
+    -moz-overflow: hidden;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.globe-worldmap-front,
+.globe-worldmap-back {
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 50px;
+    overflow: visible;
+    background-image: url('./svg/worldmap.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.globe-outer-shadow {
+    left: 0;
+    top: 50px;
+    width: 50px;
+    height: 7px;
+    background-image: url('./svg/outer_shadow.svg');
+    background-size: cover;
+}
+.globe-inner-shadow {
+    background-image: url('./svg/inner_shadow.svg');
+    background-size: cover;
+}
+
+.globe-worldmap-front {
+    background-position: 0px 0px;
+    animation: textureSpinreverse 15s linear infinite;
+}
+.globe-worldmap-back {
+    background-position: 0px -54px;
+    animation: textureSpin 15s linear infinite;
+}
+.globe-sphere {
+    background-image:url('./svg/sphere.svg');
+    background-size: cover;
+}
+
+
+
+@keyframes textureSpin {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-47.5%);
+    }
+}
+@keyframes textureSpinreverse {
+    from {
+        transform: translateX(-47.5%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    .har {
+        top: 19px;
+        left: 57px;
+    }
+    .globe-container,
+    .globe {
+        width: 40px;
+        height: 40px;
+    }
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        width: 40px;
+        height: 40px;
+    }
+    .globe-worldmap {
+        width: 40px;
+        height: 40px;
+    }
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        width: 200px;
+        height: 40px;
+    }
+    .globe-outer-shadow {
+        top: 0px;
+        width: 40px;
+        height: 6px;
+    }
+    .globe-worldmap-back {
+        background-position: 0px -44px;
+    }
+}
+@media only screen and (max-width: 1224px) {
+    .har {
+        top: 20px;
+        left: 48px;
+    }
+    .globe-container,
+    .globe {
+        width: 38px;
+        height: 38px;
+    }
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        width: 38px;
+        height: 38px;
+    }
+    .globe-worldmap {
+        width: 38px;
+        height: 38px;
+    }
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        width: 190px;
+        height: 38px;
+    }
+    .globe-outer-shadow {
+        top: 0px;
+        width: 38px;
+        height: 6px;
+    }
+    .globe-worldmap-back {
+        background-position: 0px -41px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .har {
+        top: 9px;
+        left: 46px;
+    }
+    .globe-container,
+    .globe {
+        width: 36px;
+        height: 36px;
+    }
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        width: 36px;
+        height: 36px;
+    }
+    .globe-worldmap {
+        width: 36px;
+        height: 36px;
+    }
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        width: 180px;
+        height: 36px;
+    }
+    .globe-outer-shadow {
+        top: 0px;
+        width: 36px;
+        height: 5px;
+    }
+    .globe-worldmap-back {
+        background-position: 0px -38px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .har {
+        position: static;
+    }
+    .globe-container,
+    .globe {
+        width: 70px;
+        height: 70px;
+    }
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        width: 70px;
+        height: 70px;
+    }
+    .globe-worldmap {
+        width: 70px;
+        height: 70px;
+    }
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        width: 350px;
+        height: 70px;
+    }
+    .globe-outer-shadow {
+        top: 0px;
+        width: 70px;
+        height: 7px;
+    }
+    .globe-worldmap-back {
+        background-position: 0px -78px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .har {
+        position: static;
+    }
+    .globe-container,
+    .globe {
+        width: 60px;
+        height: 60px;
+    }
+    .globe-sphere,
+    .globe-outer-shadow,
+    .globe-inner-shadow {
+        width: 60px;
+        height: 60px;
+    }
+    .globe-worldmap {
+        width: 60px;
+        height: 60px;
+    }
+    .globe-worldmap-front,
+    .globe-worldmap-back {
+        width: 300px;
+        height: 60px;
+    }
+    .globe-outer-shadow {
+        top: 0px;
+        width: 60px;
+        height: 6px;
+    }
+    .globe-worldmap-back {
+        background-position: 0px -67px;
+    }
+}

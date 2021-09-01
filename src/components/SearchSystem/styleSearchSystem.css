@@ -1,0 +1,126 @@
+.search-system {
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.search-system_rec {
+    width: 100%;
+}
+
+.search-system-item {
+    height: 40px;
+    margin: 0 20px;
+    max-width: 87px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.search-system-item .radio label {
+    padding-left: 0;
+    height: 40px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/* .search-system-item .radio label:before {
+    display: none;
+} */
+.search-system__icon {
+    position: relative;
+    pointer-events: none;
+}
+
+.search-system-other .select {
+    width: 210px;
+}
+
+.sliderBt.bt_icon {
+    min-width: 31px;
+    min-height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+    position: relative;
+    top: 4px;
+}
+.sliderBt.bt_icon[disabled] {
+    pointer-events: none;
+}
+.sliderBt.bt_icon .icon_triangleLeft {
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+.sliderBt.bt_icon .icon_triangleRight {
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.sliderBt.bt_icon .icon_arrowLeft {
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.sliderBt.bt_icon .icon_arrowRight {
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .search-system,
+    .search-system-item .radio label {
+        height: 38px;
+    }
+    .search-system-item {
+        height: 38px;
+        max-width: 85px;
+    }
+}
+@media only screen and (max-width: 1500px) and (max-height: 780px) {
+}
+@media only screen and (max-width: 580px) {
+    .search-system,
+    .search-system-item .radio label {
+        height: 34px;
+    }
+    .search-system-item {
+        max-width: 85px;
+    }
+    .radio label img {
+    }
+}
+@media only screen and (max-width: 480px) {
+    .res_sett .search-system {
+        margin-bottom: 1px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .radio label img {
+        min-width: 68px;
+    }
+}

@@ -1,0 +1,112 @@
+.header.header_cabinet {
+    height: 96px;
+    position: relative;
+}
+.header.header_cabinet .header_main {
+    width: 1427px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.header.header_cabinet .header-logo {
+    position: absolute;
+    top: 28px;
+    left: 40px;
+}
+.header.header_cabinet .header-logo svg {
+    width: 263px;
+    height: auto;
+}
+
+.header.header_cabinet .header-exit {
+}
+.header_cabinet .header_menu_bt {
+    display: none;
+}
+
+.header_cabinet .header_control {
+    right: 0px;
+}
+
+@media only screen and (max-width: 1640px) {
+    .header_cabinet .header_control {
+        right: 50px;
+        top: 30px;
+    }
+    .header.header_cabinet .header-logo {
+        top: 30px;
+        left: 40px;
+    }
+    .header.header_cabinet .header-logo svg {
+        width: 206px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header.header_cabinet {
+        height: 73px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .header.header_cabinet .header-logo {
+        position: relative;
+        top: 22px;
+        left: 0;
+    }
+    .header.header_cabinet .header_main {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .header.header_cabinet .header_menu_bt {
+        position: absolute;
+        top: 24px;
+        left: 36px;
+    }
+    .header_cabinet .header_control {
+        top: 24px;
+        right: 20px;
+    }
+    .header_cabinet .header_menu_bt {
+        display: block;
+    }
+}
+@media only screen and (max-width: 580px) {
+}
+@media only screen and (max-width: 440px) {
+    .header.header_cabinet {
+        height: 63px;
+    }
+    .wrapper_res .header_control {
+        right: 13px;
+        top: 15px;
+    }
+    .header.header_cabinet .header_menu_bt {
+        left: 22px;
+        top: 19px;
+    }
+    .header_cabinet .header_control {
+        right: 10px;
+        top: 18px;
+    }
+    .header.header_cabinet .header-logo {
+        top: 20px;
+    }
+    .header.header_cabinet .header-logo svg {
+        width: 160px;
+    }
+}

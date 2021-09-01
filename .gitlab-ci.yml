@@ -1,0 +1,41 @@
+image: node:current-alpine
+
+#cache:
+  #untracked: true
+  #key: "$CI_BUILD_REF_NAME"
+  #paths:
+    #- node_modules/
+
+stages:
+  - syntax
+  - style
+  - unit
+  #- deploy
+
+before_script:
+    - apk –update add tzdata && cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && apk del tzdata
+    - npm i
+    #- apt-get -y install npm
+    
+
+syntax:
+  stage: syntax
+  allow_failure: true
+  script:
+    - mv syntax_eslintrc.json .eslintrc.json
+    - npx eslint src
+  
+style:
+  stage: style
+  allow_failure: true
+  script:
+    - mv style_eslintrc.json .eslintrc.json
+    - npx eslint src
+
+unit:
+  stage: unit
+  script:
+    - npm run test
+
+  #rules:
+    #- if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

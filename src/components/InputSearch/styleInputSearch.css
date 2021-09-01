@@ -1,0 +1,440 @@
+.input-search_block {
+    margin-bottom: 22px;
+}
+.input-search_wrap {
+    position: relative;
+}
+.input-search_cont {
+    border-radius: 10px;
+    background: #818181;
+    border: 1px solid #747474;
+    overflow: hidden;
+}
+.input-search_main {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    background: #fff;
+    position: relative;
+}
+.input-search_lang:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: calc(100% - 6px);
+    border-left: 1px solid #b0b0b0;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+}
+
+input.search-field__input[type="text"] {
+    padding: 0 10px 0 20px;
+    height: 42px;
+    font-size: 14px;
+    color: #353535;
+    width: 100%;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.input-search_control {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.clear_input {
+    width: 44px;
+    height: 42px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.clear_input.active {
+    visibility: visible;
+    opacity: 1;
+}
+.clear_input svg {
+    width: 14px;
+    height: auto;
+}
+.button_submit {
+    height: 42px;
+    width: 68px;
+    background: #818181;
+    padding-top: 1px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.button_submit svg {
+    width: 23px;
+    height: auto;
+    position: relative;
+    top: 1px;
+}
+.button_submit:hover svg rect,
+.button_submit:hover svg ellipse stroke {
+    fill: #fff;
+}
+.button_submit:hover {
+    background: #575757;
+}
+.button_submit:active {
+    background: #818181;
+}
+
+.input-search_lang {
+    padding: 0px 13px 0px 13px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.input-search_lang img {
+    width: 25px;
+    margin-right: 6px;
+}
+
+.input-search_lang:hover {
+    background-color: rgba(8, 38, 61, 0.04);
+}
+.input-search_lang span {
+    color: #5f5f5f;
+}
+
+.icon_microphone {
+    height: 42px;
+    width: 46px;
+    padding-right: 3px;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.icon_microphone_svg {
+    position: relative;
+    top: 1px;
+}
+.icon_microphone_svg:hover .icon_microphon1 {
+    stroke: #519908;
+}
+.icon_microphone_svg:hover .icon_microphon2 {
+    stroke: #959292;
+}
+.icon_microphone_svg:hover .icon_microphon3 {
+    fill: #959292;
+}
+.icon_microphone_svg:active .icon_microphon1 {
+    stroke: #42760d;
+}
+.icon_microphone_svg:active .icon_microphon2 {
+    stroke: #575757;
+}
+.icon_microphone_svg:active .icon_microphon3 {
+    fill: #575757;
+}
+.icon_microphone.hide {
+    display: none;
+}
+
+.icon_keyboard {
+    height: 42px;
+    width: 36px;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.icon_keyboard:hover {
+    opacity: 0.85;
+}
+.icon_keyboard path.pathKeyboard {
+    fill: #b0b0b0;
+}
+.icon_keyboard:hover path.pathKeyboard {
+    fill: #959292;
+}
+.icon_keyboard:active path.pathKeyboard {
+    fill: #676666;
+}
+.icon_keyboard .pathKeyboard {
+}
+
+.page-main.input-search_block {
+    margin-bottom: 16px;
+}
+.page-main .input-search_main {
+    margin: 0 auto;
+}
+
+.chCon {
+    display: none;
+}
+
+/*==============================ADAPTIVE==============================*/
+
+@media only screen and (max-width: 1500px) {
+    input.search-field__input[type="text"],
+    .clear_input,
+    .icon_keyboard,
+    .icon_microphone,
+    .button_submit {
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 1224px) {
+    .input-search_lang img {
+        width: 23px;
+    }
+    .input-search_lang span {
+        font-size: 14px;
+    }
+    input.search-field__input[type="text"],
+    .clear_input,
+    .icon_keyboard,
+    .icon_microphone,
+    .button_submit {
+        height: 37px;
+    }
+    input.search-field__input[type="text"] {
+        padding: 0 10px 0 15px;
+    }
+    .icon_keyboard_svg svg {
+        width: 29px;
+    }
+    .icon_microphone {
+        width: 40px;
+    }
+    .icon_microphone_svg {
+        top: 2px;
+    }
+    .icon_microphone svg {
+        width: 14px;
+    }
+    .input-search_control .button_submit {
+        width: 56px;
+    }
+    .input-search_control .button_submit svg {
+        width: 20px;
+        position: relative;
+        top: 1px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .icon_keyboard {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .input-search_main {
+        border-radius: 4px;
+    }
+    input.search-field__input[type="text"],
+    .clear_input,
+    .icon_microphone,
+    .button_submit {
+        height: 33px;
+    }
+    .input-search_block {
+        margin-bottom: 17px;
+    }
+    .input-search_lang {
+        padding: 0px 4px 0px;
+        width: 72px;
+    }
+
+    .input-search_lang img {
+        margin: 0;
+    }
+    .input-search_lang span {
+        display: none;
+    }
+    .icon_microphone {
+        width: 30px;
+        padding-right: 0;
+    }
+    .input-search_control .button_submit {
+        background: none;
+        width: 38px;
+    }
+    .input-search_control .button_submit svg {
+        width: 18px;
+        height: 18px;
+    }
+    .input-search_control .button_submit svg ellipse {
+        stroke: #959292;
+    }
+    .input-search_control .button_submit svg rect {
+        fill: #959292;
+    }
+    .icon_closeInp svg {
+        width: 12px;
+        position: relative;
+        top: -1px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .clear_input {
+        padding-top: 0;
+        width: 35px;
+    }
+    .icon_microphone {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .icon_microphone_svg svg {
+        width: 13px;
+        height: auto;
+    }
+    .res_sett .input-search_block {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    input.search-field__input[type="text"] {
+        padding: 0 10px 0 8px;
+    }
+    .icon_closeInp svg rect {
+        fill: #959292;
+    }
+}

@@ -1,0 +1,22 @@
+npm install react-elastic-carousel
+
+локализация
+//npm install react-i18next i18next --save
+npm install react-i18next i18next i18next-http-backend i18next-browser-languagedetector
+
+
+npm install react-svg
+
+//typescript
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+npm i eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm i --save-dev @types/react-redux
+
+// eslint-disable-next-line react-hooks/exhaustive-deps
+
+git reset --hard
+// eslint-disable-next-line react-hooks/exhaustive-deps
+
+
+//test
+//test2
