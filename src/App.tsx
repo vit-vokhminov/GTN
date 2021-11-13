@@ -34,9 +34,7 @@ const App = () => {
             })
             .catch((error) => {
                 if (error.response) {
-                    console.log("Токен был просрочен. Данные пользователя стерты. Токен удалён.");
-                    console.log("getUser error", error);
-                    console.log("getUser error.response", error.response);
+                    //console.log("Токен был просрочен. Данные пользователя стерты. Токен удалён.");
                     localStorage.removeItem("auth_identity_token");
                     dispatch(setUserData(null));
                     dispatch(setVisibleTypeModal("authorization"));

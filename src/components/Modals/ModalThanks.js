@@ -17,7 +17,7 @@ const ModalThanks = ({ refModal, setVisibleModal }) => {
             })
             .catch((error) => {
                 if (error.response) {
-                    console.log("getSendEmail error", error);
+                    //console.log("getSendEmail error", error);
                 }
             });
     };

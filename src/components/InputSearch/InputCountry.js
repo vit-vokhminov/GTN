@@ -38,17 +38,15 @@ function InputCountry() {
                             }
                         })
                         .catch((error) => {
-                            console.log(error);
                             if (error.response) {
-                                console.log(error.response.data);
+                                //console.log(error.response.data);
                             }
                         });
                 }
             })
             .catch((error) => {
-                console.log(error);
                 if (error.response) {
-                    console.log(error.response.data);
+                   //console.log(error.response.data);
                 }
             });
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -59,7 +57,7 @@ function InputCountry() {
             <div className="input-search_country" onClick={() => openPopup(dispatch,setVisiblePopupCountry)}>
                 {selectedCountry ?
                     <>
-                        <img src={selectedCountry.icon} alt="" />
+                        <img src={`/img/flags/${selectedCountry.icon}`} alt="" />
                         <span data-country={selectedCountry.name}>{selectedCountry.acr}</span>
                     </>
                     :

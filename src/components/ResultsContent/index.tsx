@@ -74,7 +74,6 @@ function ResultsContent() {
                 },
             };
 
-            console.log("params", params);
             dispatch(setChoiceCountry(selectedCountry && selectedCountry.name));
 
             if (isUnmountedRef.current) return;
@@ -109,7 +108,6 @@ function ResultsContent() {
                     }
                 })
                 .catch((error) => {
-                    console.log("error", error);
                     if (error.response) {
                         const err = {
                             status: error.response.status,
@@ -117,7 +115,6 @@ function ResultsContent() {
                         };
                         setErrorAnswer(err);
                         setLoading(false);
-                        console.log(error.response);
                     }
                     return null;
                 });
@@ -178,7 +175,7 @@ function ResultsContent() {
             }
         }
     }
-console.log(resultSearch)
+
     return (
         <div className="results-content">
             {resultSearch && renderSwitch()}

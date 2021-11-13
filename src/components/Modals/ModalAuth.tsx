@@ -32,7 +32,6 @@ const ModalAuth = ({ refModal, newModal }:PropsType) => {
         setPassword(e.target.value);
     };
     function onSubmitForm(data:SubmitFormType) {
-        console.log("data",data)
         data.ip = "127.0.0.1";
         searchAPI
             .getAuth(data)
@@ -46,8 +45,6 @@ const ModalAuth = ({ refModal, newModal }:PropsType) => {
                 }
             })
             .catch((error) => {
-                console.log("getAuth error", error);
-                console.log("getAuth error", error.response);
                 setAnswerError(true);
             });
     }

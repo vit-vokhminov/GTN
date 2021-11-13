@@ -43,8 +43,8 @@ function Verify() {
                     }
                 })
                 .catch((error) => {
-                    console.log("getVerifyEmail ERROR", error);
-                    console.log("getVerifyEmail ERROR.response", error.response);
+                    //console.log("getVerifyEmail ERROR", error);
+                    //console.log("getVerifyEmail ERROR.response", error.response);
                 });
         }
     }, [token, urlToken, dispatch]);

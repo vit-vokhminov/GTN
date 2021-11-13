@@ -154,7 +154,7 @@ function Keyboard({
                                 setLanguageSelectionPanel(false);
                             }}
                         >
-                            <img src={`/images/flags/${elem}.svg`} alt="" />
+                            <img src={`/img/flags/${elem}.svg`} alt="" />
                             <span>{t(`languages.${languages[elem].acronim}`,"")}</span>
                         </div>
                     ))}

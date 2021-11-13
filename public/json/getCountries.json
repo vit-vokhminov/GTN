@@ -1,12 +1,20 @@
 {
   "data": {
     "germany": {
-      "icon": "https://light-search.com:5555/static/country/flags/svg/germany.svg",
+      "icon": "germany.svg",
       "acr": "GER"
     },
-    "world": {
-      "icon": "https://light-search.com:5555/static/country/flags/svg/world.svg",
-      "acr": "WLD"
+    "russia": {
+      "icon": "russian.svg",
+      "acr": "RUS"
+    },
+    "china": {
+      "icon": "chinese.svg",
+      "acr": "CN"
+    },
+    "france": {
+      "icon": "french.svg",
+      "acr": "FR"
     }
   },
   "status": 200,

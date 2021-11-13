@@ -61,7 +61,7 @@ const ModalRegister = ({ refModal, newModal }) => {
                         })
                         .catch((error) => {
                             if (error.response) {
-                                console.log("getSendEmail error", error);
+                                //console.log("getSendEmail error", error);
                             }
                         });
                     const userData = { ...response.data };
@@ -72,7 +72,7 @@ const ModalRegister = ({ refModal, newModal }) => {
             })
             .catch((error) => {
                 if (error.response) {
-                    console.log("getRegistration error", error);
+                    //console.log("getRegistration error", error);
                 }
             });
     }

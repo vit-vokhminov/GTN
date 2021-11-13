@@ -1,5 +1,4 @@
 import axios from "axios";
-//const ENV = process.env.REACT_APP_BASEURL;
 //import {FilterType} from "../redux/reducers/aggregate";
 
 const GASKETKEY = "api=99df3b0fd1e9b9c3e8188bed635c5d8f898e74a295e94867865e19ea11e89dfc";

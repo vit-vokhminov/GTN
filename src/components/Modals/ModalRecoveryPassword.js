@@ -21,7 +21,6 @@ const ModalRecoveryPassword = ({ refModal, newModal }) => {
     };
 
     const onSubmitForm = (data) => {
-        console.log("onSubmitForm", data);
         dispatch(setUserEmail(data.email));
         sendRecoveryPassword(data.email, setNoEmail);
     };
@@ -39,11 +38,8 @@ const ModalRecoveryPassword = ({ refModal, newModal }) => {
                 }
             })
             .catch((error) => {
-                console.log(error);
                 setNoEmail(true);
-                if (error.response) {
-                    console.log(error.response.data);
-                }
+                //console.log(error.response.data);
             });
     };
 

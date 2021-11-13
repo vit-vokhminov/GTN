@@ -2,75 +2,63 @@
   "data": {
     "ar_AE": {
       "name": "Arabic (United Arab Emirates)",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/united_arab_emirates.svg"
+      "icon": "arabic.svg"
     },
     "bn_BD": {
       "name": "Bengali",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/bangladesh.svg"
+      "icon": "bengali.svg"
     },
     "de_DE": {
       "name": "German",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/germany.svg"
+      "icon": "germany.svg"
     },
     "en_US": {
       "name": "English (USA)",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/united_states_of_america.svg"
+      "icon": "english.svg"
     },
     "es_ES": {
       "name": "Spanish",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/spain.svg"
+      "icon": "spanish.svg"
     },
     "fr_FR": {
       "name": "French (France)",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/france.svg"
+      "icon": "french.svg"
     },
     "hi_IN": {
       "name": "Hindi",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/india.svg"
-    },
-    "id_ID": {
-      "name": "Indonesian",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/indonesia.svg"
+      "icon": "hindi.svg"
     },
     "it_IT": {
       "name": "Italian",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/italy.svg"
+      "icon": "italian.svg"
     },
     "ja_JP": {
       "name": "Japanese",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/japan.svg"
+      "icon": "japanese.svg"
     },
     "pl_PL": {
       "name": "Polish",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/poland.svg"
-    },
-    "pt_PT": {
-      "name": "Portuguese",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/portugal.svg"
+      "icon": "polish.svg"
     },
     "ru_RU": {
       "name": "Russian",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/russia.svg"
-    },
-    "sw_TZ": {
-      "name": "Swahili",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/tanzania.svg"
+      "icon": "russian.svg"
     },
     "tr_TR": {
       "name": "Turkish",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/turkey.svg"
+      "icon": "turkish.svg"
     },
     "uk_UA": {
       "name": "Ukrainian",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/ukraine.svg"
+      "icon": "ukrainian.svg"
     },
     "ur_PK": {
       "name": "Urdu",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/pakistan.svg"
+      "icon": "urdu.svg"
     },
     "zh-Hant_TW": {
       "name": "Chinese (traditional)",
-      "icon": "https://light-search.com:5555/static/country/flags/svg/china.svg"
+      "icon": "chinese.svg"
     }
   },
   "status": 200,

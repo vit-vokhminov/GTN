@@ -38,14 +38,13 @@ const PopupCountrySelected = (props) => {
             .then((response) => {
                 if (response.status === 200) {
                     dispatch(setDataEngines(response.data));
-                    console.log('Object.values(response.data.engines)[0].name',Object.values(response.data.engines)[0].name)
+                    //console.log('Object.values(response.data.engines)[0].name',Object.values(response.data.engines)[0].name)
                     dispatch(setSelectedEngine(Object.values(response.data.engines)[0].name)); // TS string
                 }
             })
             .catch((error) => {
-                console.log(error);
                 if (error.response) {
-                    console.log(error.response.data);
+                    //console.log(error.response.data);
                 }
             });
         closePopup(setVisiblePopupCountry);
@@ -137,7 +136,7 @@ const PopupCountrySelected = (props) => {
                                                 }}
                                             >
                                                 <div className="popup_content_elem_main">
-                                                    <img src={elem.icon} alt="" />
+                                                    <img src={`/img/flags/${elem.icon}`} alt="" />
                                                     <span className="lang">{elem.translation}</span>
                                                 </div>
                                             </div>

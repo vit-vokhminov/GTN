@@ -127,7 +127,7 @@ function PopupLanguageSelected(props) {
                                                     }}
                                                 >
                                                     <div className="popup_content_elem_main">
-                                                        <img src={language[elem].icon} alt="" />
+                                                        <img src={`/img/flags/${language[elem].icon}`} alt="" />
                                                         <span className="lang">
                                                             {sortTranslation[elem]}
                                                         </span>

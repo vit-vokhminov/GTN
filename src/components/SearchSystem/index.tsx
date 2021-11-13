@@ -37,56 +37,58 @@ function SearchSystem() {
     ];
 
     const System = () => {
-        if (dataEngines.engines.length > 5 || (width <= 650)) {
-            return (
-                <div className="search-system_rec">
-                    <Carousel
-                        breakPoints={breakPointsCarousel}
-                        pagination={false}
-                        //trackTouch={true}
-                        preventDefaultTouchmoveEvent={true}
-                        renderArrow={({ type, onClick, isEdge }) => {
-                            const pointer =
-                                type === "PREV" ? (
-                                    <ReactSVG src={IconArrowLeft} className="icon_arrowLeft" />
-                                ) : (
-                                    <ReactSVG src={IconArrowRight} className="icon_arrowRight" />
-                                );
-                            return (
-                                <button
-                                    onClick={onClick}
-                                    disabled={isEdge}
-                                    className="sliderBt bt_icon bt_icon_string"
-                                >
-                                    {pointer}
-                                </button>
-                            );
-                        }}
-                    >
-                        {dataEngines.engines.map((elem:any, i:number) => {
-                            return (
-                                <SearchSystemItem
-                                    key={`CarouselElem_${i}`}
-                                    {...elem}
-                                    checked={elem.name === selectedEngine.name}
-                                    choiceEngine={choiceEngine}
-                                />
-                            );
-                        })}
-                    </Carousel>
-                </div>
-            );
-        } else {
-            return dataEngines.engines.map((elem:any, i:number) => {
+        if(dataEngines?.engines?.length){
+            if (dataEngines.engines.length > 5 || (width <= 650)) {
                 return (
-                    <SearchSystemItem
-                        key={i}
-                        {...elem}
-                        checked={elem.name === selectedEngine.name}
-                        choiceEngine={choiceEngine}
-                    />
+                    <div className="search-system_rec">
+                        <Carousel
+                            breakPoints={breakPointsCarousel}
+                            pagination={false}
+                            //trackTouch={true}
+                            preventDefaultTouchmoveEvent={true}
+                            renderArrow={({ type, onClick, isEdge }) => {
+                                const pointer =
+                                    type === "PREV" ? (
+                                        <ReactSVG src={IconArrowLeft} className="icon_arrowLeft" />
+                                    ) : (
+                                        <ReactSVG src={IconArrowRight} className="icon_arrowRight" />
+                                    );
+                                return (
+                                    <button
+                                        onClick={onClick}
+                                        disabled={isEdge}
+                                        className="sliderBt bt_icon bt_icon_string"
+                                    >
+                                        {pointer}
+                                    </button>
+                                );
+                            }}
+                        >
+                            {dataEngines.engines.map((elem:any, i:number) => {
+                                return (
+                                    <SearchSystemItem
+                                        key={`CarouselElem_${i}`}
+                                        {...elem}
+                                        checked={elem.name === selectedEngine.name}
+                                        choiceEngine={choiceEngine}
+                                    />
+                                );
+                            })}
+                        </Carousel>
+                    </div>
                 );
-            });
+            } else {
+                return dataEngines.engines.map((elem:any, i:number) => {
+                    return (
+                        <SearchSystemItem
+                            key={i}
+                            {...elem}
+                            checked={elem.name === selectedEngine.name}
+                            choiceEngine={choiceEngine}
+                        />
+                    );
+                });
+            }
         }
     };
 
