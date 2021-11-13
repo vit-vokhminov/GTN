@@ -1,6 +1,6 @@
-# GTN (Агрегатор поисковых систем)
+## GTN (Агрегатор поисковых систем)
 
-![Image alt](https://github.com/vit-vokhminov/react-burgers/blob/master/public/2021-11-13_23-57-58.jpg)
+![Image alt](https://github.com/vit-vokhminov/GTN/blob/master/public/2021-11-13_23-57-58.jpg)
 
 ### Установка
 
